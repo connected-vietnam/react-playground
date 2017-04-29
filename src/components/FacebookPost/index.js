@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { withState } from 'recompose'
-import enhanceWithClickOutside from 'react-click-outside'
+import enhanceWithClickOutside from 'react-onclickoutside'
 import Icon from '../Icon'
 
 class _PostTopMenu extends React.Component {
