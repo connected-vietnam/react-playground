@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@kadira/storybook": "^2.35.3",
+    "classnames": "^2.2.5",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
@@ -12,6 +14,7 @@
     "babel-eslint": "7.1.1",
     "babel-jest": "18.0.0",
     "babel-loader": "6.2.10",
+    "babel-plugin-module-resolver": "^2.7.0",
     "babel-preset-react-app": "^2.2.0",
     "babel-runtime": "^6.20.0",
     "case-sensitive-paths-webpack-plugin": "1.1.4",
@@ -51,6 +54,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "lint": "eslint ./src",
+    "storybook": "start-storybook -p 9001",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
@@ -76,13 +80,5 @@
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     }
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   }
 }
