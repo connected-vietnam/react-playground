@@ -1,0 +1,29 @@
+/* eslint-disable no-unused-vars */
+
+type TUser = {
+  id: string,
+  name: string,
+  avatar: string,
+}
+
+type TEngagement = {
+  like: Array<TUser>,
+  angry: Array<TUser>,
+  love: Array<TUser>,
+  total: number,
+}
+
+type TComment = {
+  user: TUser,
+  text: string,
+  engagement: TEngagement,
+}
+
+type TPost = {
+  user: TUser,
+  link: string,
+  publishTime: Date,
+  text: string,
+  engagement: TEngagement,
+  comments: Array<TComment>,
+}
